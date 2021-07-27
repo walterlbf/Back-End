@@ -17,3 +17,10 @@ SELECT LENGTH('Uma frase qualquer');
 SELECT SUBSTRING('A linguagem JavaScript está entre as mais usadas', 13, 10);
 -- Por fim, padronize a string 'RUA NORTE 1500, SÃO PAULO, BRASIL' para que suas informações estejam todas em caixa baixa.
 SELECT LCASE('RUA NORTE 1500, SÃO PAULO, BRASIL'); 
+
+SELECT film_id, IF (film_id) FROM sakila.film;
+
+SELECT rental_duration + rental_rate FROM sakila.film LIMIT 10;
+SELECT rental_duration - rental_rate FROM sakila.film LIMIT 10;
+SELECT rental_duration / rental_rate FROM sakila.film LIMIT 10;
+SELECT rental_duration * rental_rate FROM sakila.film LIMIT 10;
