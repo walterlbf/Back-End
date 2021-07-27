@@ -9,7 +9,7 @@ BEGIN
 END $$
 
 CREATE TRIGGER trigger_movie_log_insert
-    AFTER INSERT ON movies
+    AFTER INSERT ON movies -- depois que inserir algo na tabela movies
     FOR EACH ROW
 BEGIN
     INSERT INTO movies_logs(movie_id, executed_action, log_date)
